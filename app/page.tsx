@@ -1,17 +1,18 @@
 import About from "@/components/About";
 import BoardingPass from "@/components/Boardingpass";
 import PhantasiaFooter from "@/components/Footer";
+import Hero from "@/components/Hero";
 import SponsorsComponent from "@/components/Sponsors";
+import Timeline from "@/components/Timeline";
 import TracksComponent from "@/components/Tracks";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-white">
-      <div className=" flex items-center justify-center bg-blue-800 min-h-screen">
-        <h1 className="text-4xl">Hero Section</h1>
-      </div>
+      <Hero />
       <TracksComponent />
+      <Timeline />
       <SponsorsComponent />
       <About />
       <BoardingPass />
