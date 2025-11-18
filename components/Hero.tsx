@@ -1,3 +1,4 @@
+"use client";
 export default function Hero() {
   return (
     <section className="relative flex flex-col justify-center items-center px-4 sm:px-8 md:px-16 min-h-screen h-screen text-base sm:text-xl md:text-2xl lg:text-3xl font-light text-black">
@@ -21,7 +22,7 @@ export default function Hero() {
 
       <div className="absolute bottom-8 sm:bottom-12 md:bottom-16 lg:bottom-24 w-fit px-6 sm:px-12 md:px-20 lg:px-32 bg-phantasia-blue text-lg sm:text-2xl md:text-3xl lg:text-4xl rounded-lg sm:rounded-xl md:rounded-2xl p-2 sm:p-3 font-medium cursor-pointer hover:opacity-90 transition-opacity">
         Register Now
-      </div>
+      </a>
     </section>
-  )
+  );
 }
