@@ -14,16 +14,16 @@ const VerticalLine = () => (
 
 export default function AboutComponent() {
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center px-4 py-16">
+    <div className="min-h-screen bg-white flex items-center justify-center px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
       <div className="w-full max-w-[1400px]">
-        <div className="flex flex-col lg:flex-row gap-0 items-center">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 items-center">
           {/* Left side - Text content */}
-          <div className="flex-1 flex flex-col items-center justify-center px-12 py-4">
+          <div className="flex-1 flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 py-4">
             <div className="max-w-[500px]">
-              <h1 className="text-[5.5rem] font-black text-black tracking-tight leading-none mb-16">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] font-black text-black tracking-tight leading-none mb-6 sm:mb-8 md:mb-12 lg:mb-16">
                 ABOUT
               </h1>
-              <p className="text-black text-2xl leading-relaxed">
+              <p className="text-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed">
                 Phantasia, the flagship event of the Fullstack Club, has evolved
                 from a multi-event tech fest into a full-scale hackathon that
                 celebrates innovation and collaboration. This year, it brings
@@ -35,14 +35,14 @@ export default function AboutComponent() {
           </div>
 
           {/* Vertical line separator */}
-          <div className="hidden lg:flex items-center justify-center flex-shrink-0">
+          <div className="hidden lg:flex items-center justify-center shrink-0">
             <VerticalLine />
           </div>
 
           {/* Right side - Images grid */}
-          <div className="flex-1 grid grid-rows-2 gap-4 px-12 py-8">
+          <div className="flex-1 grid grid-rows-2 gap-3 sm:gap-4 px-4 sm:px-6 md:px-12 py-4 sm:py-6 md:py-8 w-full">
             {/* Top image */}
-            <div className="w-full h-[250px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="w-full h-[150px] sm:h-[200px] md:h-[250px] bg-gray-200 rounded-lg overflow-hidden">
               <img
                 src="/about1.png"
                 alt="Phantasia Event Team 1"
@@ -51,7 +51,7 @@ export default function AboutComponent() {
             </div>
 
             {/* Bottom image */}
-            <div className="w-full h-[250px] bg-gray-200 rounded-lg overflow-hidden">
+            <div className="w-full h-[150px] sm:h-[200px] md:h-[250px] bg-gray-200 rounded-lg overflow-hidden">
               <img
                 src="/about2.png"
                 alt="Phantasia Event Team 2"

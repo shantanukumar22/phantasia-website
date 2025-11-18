@@ -3,34 +3,35 @@ import Image from "next/image";
 
 const PhantasiaFooter = () => {
   return (
-    <footer className="bg-black text-white py-16 px-8">
+    <footer className="bg-black text-white py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Logo and Social Media Section */}
-        <div className="flex flex-col items-center mb-16">
+        <div className="flex flex-col items-center mb-8 sm:mb-12 md:mb-16">
           {/* Phantasia Logo */}
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8 w-full max-w-xs sm:max-w-md md:max-w-2xl">
             <Image
               src="/footerlogo.png"
               alt="Phantasia"
               width={2400}
               height={480}
-              className="w-auto h-auto max-w-full"
+              className="w-full h-auto"
             />
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex gap-6 mb-4">
+          <div className="flex gap-3 sm:gap-4 md:gap-6 mb-4">
             {/* Telegram */}
             <a
               href="#"
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 sm:w-6 sm:h-6"
               >
                 <path
                   d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM17.562 8.161L15.803 17.364C15.803 17.364 15.561 17.928 15.004 17.688L10.849 14.478L9.337 13.784L6.253 12.762C6.253 12.762 5.794 12.601 5.755 12.241C5.716 11.881 6.293 11.681 6.293 11.681L16.864 7.721C16.864 7.721 17.562 7.401 17.562 8.161Z"
@@ -42,11 +43,12 @@ const PhantasiaFooter = () => {
             {/* LinkedIn */}
             <a
               href="#"
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
+                className="w-5 h-5 sm:w-6 sm:h-6"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +63,12 @@ const PhantasiaFooter = () => {
             {/* Twitter */}
             <a
               href="#"
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
+                className="w-5 h-5 sm:w-6 sm:h-6"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,11 +83,12 @@ const PhantasiaFooter = () => {
             {/* Instagram */}
             <a
               href="#"
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-colors"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
+                className="w-5 h-5 sm:w-6 sm:h-6"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,10 +103,10 @@ const PhantasiaFooter = () => {
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12">
+        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end gap-8 sm:gap-10 md:gap-12">
           {/* Left Side - Code Create Conquer */}
-          <div className="flex-1">
-            <h2 className="text-6xl md:text-8xl font-black leading-tight">
+          <div className="flex-1 w-full text-center lg:text-left">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-tight">
               <div>CODE.</div>
               <div>CREATE.</div>
               <div>CONQUER.</div>
@@ -110,19 +114,18 @@ const PhantasiaFooter = () => {
           </div>
 
           {/* Right Side - Contact Info */}
-          {/* Right Side - Contact Info */}
-          <div className="flex-1 flex flex-col justify-center h-full items-end">
-            <div className="flex flex-col items-start text-left">
-              <div className="mb-4">
+          <div className="flex-1 flex flex-col justify-center h-full items-center lg:items-end w-full">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="mb-3 sm:mb-4">
                 <Image
                   src="/fslogo.png"
                   alt="FS Logo"
                   width={120}
                   height={50}
-                  className="w-auto h-auto"
+                  className="w-20 sm:w-24 md:w-28 lg:w-auto h-auto"
                 />
               </div>
-              <div className="text-base leading-relaxed">
+              <div className="text-xs sm:text-sm md:text-base leading-relaxed">
                 <p className="font-normal mb-1">fullstack@bennet.edu.in</p>
                 <p className="font-normal mb-1">Bennett University,</p>
                 <p className="font-normal mb-1">Plot Nos 8-11, TechZone II,</p>

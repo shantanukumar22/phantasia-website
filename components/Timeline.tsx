@@ -15,8 +15,8 @@ export default function Timeline() {
   ];
 
   return (
-    <div className="flex flex-col w-full h-full rounded-2xl px-6 sm:px-12 lg:px-24 font-extrabold gap-8 text-black">
-      <h1 className="text-4xl sm:text-6xl lg:text-8xl text-center sm:text-left">
+    <div className="flex flex-col w-full h-full rounded-2xl px-4 sm:px-6 md:px-12 lg:px-24 font-extrabold gap-6 sm:gap-8 text-black py-8 sm:py-12">
+      <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl text-center sm:text-left">
         TIMELINE
       </h1>
       <TimelineComponent title="31st Jan | Day 1" scheduleEntry={schedule1} />
@@ -39,15 +39,15 @@ function TimelineComponent({
   scheduleEntry: ScheduleEntry[];
 }) {
   return (
-    <div className="flex flex-col w-full gap-8 p-4 sm:p-8 pt-0">
+    <div className="flex flex-col w-full gap-6 sm:gap-8 p-3 sm:p-4 md:p-8 pt-0">
       {/* Title */}
       <div className="flex justify-center">
-        <h2 className="bg-black text-white text-2xl sm:text-4xl lg:text-5xl w-fit p-5 rounded-2xl text-center">
+        <h2 className="bg-black text-white text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl w-fit p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl text-center">
           {title}
         </h2>
       </div>
 
-      <div className="relative flex flex-col items-center gap-6 sm:gap-3 py-8">
+      <div className="relative flex flex-col items-center gap-4 sm:gap-6 md:gap-3 py-6 sm:py-8">
         {/* Center line */}
         <div className="absolute left-1/2 top-8 bottom-8 w-0.5 bg-black hidden sm:block"></div>
 
@@ -57,12 +57,12 @@ function TimelineComponent({
           return (
             <div
               key={i}
-              className={`flex w-full text-lg sm:text-2xl font-light ${
+              className={`flex w-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-light ${
                 isLeft ? "sm:justify-start" : "sm:justify-end"
               } justify-center`}
             >
               <div
-                className="border-2 border-black rounded-lg px-3 py-4 sm:w-[45%] w-[90%] bg-white shadow-sm"
+                className="border-2 border-black rounded-lg px-3 py-3 sm:py-4 sm:w-[45%] w-[95%] max-w-md sm:max-w-none bg-white shadow-sm"
               >
                 <span
                   className={item.bold ? "font-bold" : "font-light"}
