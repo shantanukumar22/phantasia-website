@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Phantasia || Fullstack BU",
-  description: "Welcome to phantasia.",
+  description: "Welcome to phantasia A 24 hour phantastic hackathon.",
 };
 
 export default function RootLayout({
